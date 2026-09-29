@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[58883,["2362","static/chunks/30a37ab2-cccb8f941508be41.js","4777","static/chunks/66ec4792-b60970ed814fe5c3.js","5897","static/chunks/f8025e75-6284929c3544fb31.js","6711","static/chunks/8e1d74a4-f18aebc846e99ef5.js","7949","static/chunks/578c2090-93a8a7fa11e9e001.js","5760","static/chunks/f7333993-65b80c4d0295eba7.js","3242","static/chunks/3242-3b4d9edb6edd9d8e.js","8500","static/chunks/8500-91b6320178318d91.js","683","static/chunks/683-cce8cc3a723ed39d.js","4716","static/chunks/4716-d9cd450eb89d21b9.js","6609","static/chunks/6609-361da0bc371d3d17.js","5789","static/chunks/5789-526c3f41ba586509.js","2763","static/chunks/2763-3bc31cd033a2509c.js","8835","static/chunks/8835-58722a941e2c6ba1.js","7426","static/chunks/7426-d27e06e4f26350c3.js","7235","static/chunks/7235-14dd43c5efda72ef.js","7736","static/chunks/app/resume/page-78ff997d36471d73.js"],"ResumePageClient"]
+3:I[90484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/_next/static/css/f3352fd32fb3ddcf.css","style"]
+0:{"buildId":"xIl4sOK72ryW1y4Rzj2fS","rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f3352fd32fb3ddcf.css","precedence":"next"}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

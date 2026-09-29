@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .sky-a{stop-color:#4c7cf5}.sky-b{stop-color:#6965fa}.sky-c{stop-color:#9456eb}
+    .water-a{stop-color:#969bab}.water-b{stop-color:#aeb2bf}.water-c{stop-color:#c2c5cf}
+    .star{fill:#7863ef}
+    @media(prefers-color-scheme:dark){
+      .sky-a{stop-color:#8cb4ff}.sky-b{stop-color:#aba0ff}.sky-c{stop-color:#ca98ff}
+      .water-a{stop-color:#9299ad}.water-b{stop-color:#c4c8d3}.water-c{stop-color:#e6e8ed}
+      .star{fill:#b4a0ff}
+    }
+  </style>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop class="sky-a"/><stop class="sky-b" offset=".5"/><stop class="sky-c" offset="1"/></linearGradient>
+    <linearGradient id="water" gradientUnits="userSpaceOnUse" x1="10.8" y1="40" x2="43" y2="40"><stop class="water-a"/><stop class="water-b" offset=".55"/><stop class="water-c" offset="1"/></linearGradient>
+  </defs>
+  <path d="M10.8 41C21 35 31 46 43 40" fill="none" stroke="url(#water)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M38 9.8A23 23 0 1 0 54.2 26" fill="none" stroke="url(#sky)" stroke-width="4.5" stroke-linecap="round"/>
+  <path class="star" d="M49 10.5Q50 15 54.5 16 50 17 49 21.5 48 17 43.5 16 48 15 49 10.5Z"/>
+</svg>

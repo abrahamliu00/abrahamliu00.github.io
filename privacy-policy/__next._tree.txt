@@ -1,0 +1,5 @@
+:HL["/_next/static/css/e7a744dfdf9410e2.css","style"]
+:HL["/_next/static/css/50b097bb4c09b335.css","style"]
+:HL["/_next/static/css/a72c5eae1902ee1e.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400..700;1,400..700&display=swap","style"]
+0:{"buildId":"xIl4sOK72ryW1y4Rzj2fS","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"privacy-policy","paramType":null,"paramKey":"privacy-policy","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

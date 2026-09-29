@@ -1,0 +1,57 @@
+# llms.txt - Information for AI assistants and LLMs
+# Learn more: https://llmstxt.org/
+
+> Yuhan Liu — interested in machine learning and statistics, and in making models reliable in practice.
+
+# Site Information
+- Name: Yuhan Liu
+- URL: https://abrahamliu00.github.io
+- Description: Personal website for projects, reflections, and learning notes on machine learning and statistics.
+- Topics: Machine Learning, Statistics, Artificial Intelligence
+
+# Content Access
+
+## Blog
+- RSS Feed: /rss.xml (all posts with descriptions)
+- Full RSS: /rss-full.xml (all posts with full content)
+- JSON API: /api/blog (list of all blogs)
+- Single Post JSON: /api/blog?slug={slug}
+- Single Post Markdown: /api/blog?slug={slug}&format=md
+
+## Projects
+- JSON API: /api/portfolio (list of all projects)
+- Single Project JSON: /api/portfolio?slug={slug}
+- Single Project Markdown: /api/portfolio?slug={slug}&format=md
+
+## Research
+- JSON API: /api/research (list of all research entries)
+- Single Entry JSON: /api/research?slug={slug}
+- Single Entry Markdown: /api/research?slug={slug}&format=md
+
+## Discovery
+- Sitemap: /sitemap.xml
+- Full content of every post, project, and research entry in one file: /llms-full.txt
+
+# Blog Posts
+
+# Research
+
+# Projects
+
+# How to Use This Site
+1. Fetch /api/blog for a list of all published blog posts
+2. Use /api/blog?slug={slug}&format=md to get full markdown content of any post
+3. Fetch /api/portfolio for a list of all projects
+4. Subscribe to /rss-full.xml for complete article content
+5. Or fetch /llms-full.txt once for the complete text of everything above
+
+# Permissions
+- AI assistants may read and summarize content from this site
+- Please link back to original articles/projects when citing
+
+# Contact
+- Email: mailto:yuhan594@connect.hku.hk
+- GitHub: https://github.com/abrahamliu00
+- ORCID: https://orcid.org/0009-0004-9100-5401
+- LinkedIn: https://www.linkedin.com/in/yuhan-liu-461b24343
+- X: https://x.com/YuhanLiu5

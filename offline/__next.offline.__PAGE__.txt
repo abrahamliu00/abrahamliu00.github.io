@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[63243,["3242","static/chunks/3242-3b4d9edb6edd9d8e.js","9734","static/chunks/app/offline/page-bf3b84c30374ec44.js"],"T"]
+3:I[90484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"xIl4sOK72ryW1y4Rzj2fS","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"-mt-36 flex min-h-screen flex-col items-center justify-center gap-4","children":["$","section",null,{"className":"text-center","children":[["$","h1",null,{"className":"text-center","children":["$","$L2",null,{"zh":"503 - 离线","children":"503 - Offline"}]}],["$","p",null,{"className":"my-2 max-w-prose md:my-4","children":["$","$L2",null,{"zh":"当前似乎处于离线状态。请连接网络后刷新页面。","children":"It looks like you are offline. Please connect to the internet and refresh this page."}]}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
