@@ -25,7 +25,7 @@ for (let start = date(firstTrackingDay); start <= date(today);) {
 }
 
 async function query(dateRange, dimension, offset = 0) {
-  const body = { site_id: siteId, metrics: ['visitors'], date_range: dateRange }
+  const body = { site_id: siteId, metrics: dimension ? ['visitors'] : ['pageviews'], date_range: dateRange }
   if (dimension) Object.assign(body, { dimensions: [dimension], limit: 1000, offset })
   const response = await fetch('https://statable.com/api/v1/query', {
     method: 'POST',
@@ -53,12 +53,12 @@ const knownLocations = new Map((previous.points ?? [])
 
 const cityTotals = new Map()
 const countries = new Set()
-let visitors = 0
+let pageviews = 0
 for (const range of ranges) {
   const [totals, cities, countryRows] = await Promise.all([
     query(range), breakdown(range, 'visit:city'), breakdown(range, 'visit:country')
   ])
-  visitors += Number(totals.results?.[0]?.metrics?.visitors ?? 0)
+  pageviews += Number(totals.results?.[0]?.metrics?.pageviews ?? 0)
   for (const row of cities) {
     const id = String(row.dimensions?.['visit:city'] ?? '')
     if (!/^\d+$/.test(id)) continue
@@ -96,6 +96,6 @@ for (const [geonameId, city] of [...cityTotals].sort((a, b) => b[1].count - a[1]
 
 await writeFile(output, JSON.stringify({
   status: 'ready', trackingStartedAt: firstTrackingDay, updatedAt: new Date().toISOString(),
-  visitors, countries: countries.size, points
+  pageviews, countries: countries.size, points
 }) + '\n')
-console.log(`Updated all-time visitor history: ${visitors} visitors, ${countries.size} countries, ${points.length} cities`)
+console.log(`Updated all-time visitor history: ${pageviews} pageviews, ${countries.size} countries, ${points.length} cities`)

@@ -1,5 +1,5 @@
 :HL["/_next/static/css/e7a744dfdf9410e2.css","style"]
-:HL["/_next/static/css/0d64ba1c9e64344a.css","style"]
+:HL["/_next/static/css/cb95f73d26d5db62.css","style"]
 :HL["/_next/static/css/a72c5eae1902ee1e.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400..700;1,400..700&display=swap","style"]
-0:{"buildId":"9JuxAGKYB5BkiEwm2PRay","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"QLCt-7BUATjEK8YJUA0jQ","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
