@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises'
+import { cityLabelForFeature, fetchGeoNamesFeature } from './geonames-city.mjs'
 
 const token = process.env.STATABLE_API_KEY
 if (!token) throw new Error('STATABLE_API_KEY is required')
@@ -77,22 +78,29 @@ for (const range of ranges) {
 
 const countryNames = new Intl.DisplayNames(['en'], { type: 'region' })
 async function geocode(id) {
-  const response = await fetch(`https://sws.geonames.org/${id}/about.rdf`)
-  if (!response.ok) throw new Error(`GeoNames ${id}: HTTP ${response.status}`)
-  const xml = await response.text()
-  const field = (name) => xml.match(new RegExp(`<${name}>([^<]+)</${name}>`))?.[1]
-  const lat = Number(field('wgs84_pos:lat'))
-  const lng = Number(field('wgs84_pos:long'))
-  const code = field('gn:countryCode')
+  const feature = await fetchGeoNamesFeature(id)
+  const { lat, lng, countryCode: code } = feature
   if (!Number.isFinite(lat) || !Number.isFinite(lng) || !code) throw new Error(`GeoNames ${id}: coordinates unavailable`)
-  return { lat, lng, c: countryNames.of(code) ?? code }
+  return { lat, lng, c: countryNames.of(code) ?? code, feature }
 }
 
 const points = []
 for (const [geonameId, city] of [...cityTotals].sort((a, b) => b[1].count - a[1].count).slice(0, 500)) {
-  const location = knownLocations.get(geonameId) ?? await geocode(geonameId)
-  const label = geonameId === '7905250' ? 'Wuhan' : city.label || location.t || 'Unknown city'
-  points.push({ geonameId, lat: location.lat, lng: location.lng, t: label, c: location.c, v: city.count })
+  const known = knownLocations.get(geonameId)
+  const location = known ?? await geocode(geonameId)
+  let label = city.label || location.t || 'Unknown city'
+  let cityResolved = known?.cityResolved === true
+  if (location.c === 'China') {
+    if (cityResolved) {
+      label = known.t
+    } else {
+      const feature = location.feature ?? (await geocode(geonameId)).feature
+      const result = await cityLabelForFeature(feature, location.c, label)
+      label = result.label
+      cityResolved = result.resolved
+    }
+  }
+  points.push({ geonameId, lat: location.lat, lng: location.lng, t: label, c: location.c, v: city.count, ...(location.c === 'China' ? { cityResolved } : {}) })
 }
 
 await writeFile(output, JSON.stringify({
