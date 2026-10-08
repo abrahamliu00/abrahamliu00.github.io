@@ -1,5 +1,5 @@
 :HL["/_next/static/css/e7a744dfdf9410e2.css","style"]
-:HL["/_next/static/css/222a67382f6f8735.css","style"]
+:HL["/_next/static/css/8e23461aca956507.css","style"]
 :HL["/_next/static/css/a72c5eae1902ee1e.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400..700;1,400..700&display=swap","style"]
-0:{"buildId":"Vtp9jXI-r-rGtFezMlyiV","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"fa1pDoNeJtuw7O8MrL12b","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
