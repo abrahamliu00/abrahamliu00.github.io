@@ -91,7 +91,8 @@ async function geocode(id) {
 const points = []
 for (const [geonameId, city] of [...cityTotals].sort((a, b) => b[1].count - a[1].count).slice(0, 500)) {
   const location = knownLocations.get(geonameId) ?? await geocode(geonameId)
-  points.push({ geonameId, lat: location.lat, lng: location.lng, t: city.label || location.t || 'Unknown city', c: location.c, v: city.count })
+  const label = geonameId === '7905250' ? 'Wuhan' : city.label || location.t || 'Unknown city'
+  points.push({ geonameId, lat: location.lat, lng: location.lng, t: label, c: location.c, v: city.count })
 }
 
 await writeFile(output, JSON.stringify({
